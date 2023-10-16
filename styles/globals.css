@@ -2,26 +2,129 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+:root {
+  --selection-text-color: white;
+  --selection-bg-color: rgba(192, 38, 211, 0.5);
+  --cursor-color: rgb(192 38 211);
+}
+
+*:focus {
+  outline: none !important;
+}
+
+*::selection {
+  background-color: var(--selection-bg-color);
+  color: var(--selection-text-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.background-animate {
+  background-size: 500%;
+  -webkit-animation: text-bg 3s ease-in-out infinite;
+  -moz-animation: text-bg 3s ease-in-out infinite;
+  animation: text-bg 3s ease-in-out infinite;
+}
+
+@keyframes text-bg {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.nav-link {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link::before,
+.nav-link::after {
+  border-radius: 30px;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  width: 0;
+  height: 2px;
+  background-color: var(--cursor-color);
+  transform: translateX(-50%);
+  transition: width 0.25s ease-in-out;
+}
+
+.nav-link:hover::before {
+  width: 80%;
+}
+
+.nav-link:hover::after {
+  width: 80%;
+  left: 50%;
+}
+
+.nav-link-selected {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link-selected::before,
+.nav-link-selected::after {
+  border-radius: 30px;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  width: 50%;
+  height: 2px;
+  background-color: var(--cursor-color);
+  transform: translateX(-50%);
+  transition: width 0.25s ease-in-out;
+}
+
+.nav-link-selected::before {
+  width: 80%;
+}
+
+.nav-link-selected::after {
+  width: 80%;
+  left: 50%;
+}
+
+@keyframes slide-fade {
+  0% {
+    transform: translateY(3px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(19px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(23px);
+    opacity: 0;
+  }
+}
+
+.animate-slide-fade {
+  animation: slide-fade 4s ease-in-out infinite;
 }
