@@ -72,7 +72,7 @@ const Hero = () => {
         </motion.p>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-20 md:bottom-14 lg:bottom-10 left-1/2 transform -translate-x-1/2">
         <div className="w-8 h-12 relative">
           <div className="w-6 h-10 border-2 border-fuchsia-600 dark:border-gray-200 rounded-full absolute left-1/2 transform -translate-x-1/2">
             <div

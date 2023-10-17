@@ -71,22 +71,22 @@ const handler = async (req, res) => {
               </style>
           </head>
           <body>
-            <div class="container">
-              <div class="header">
+            <div className="container">
+              <div className="header">
                   <h1>New Contact Form Submission</h1>
               </div>
-              <div class="content">
-                <p class="message">Hi there,<br><br>
+              <div className="content">
+                <p className="message">Hi there,<br><br>
                   <strong>${data.name}</strong> has sent you a message from your portfolio site.
                   <br>
                   <br>
                     Here is what they wanted to say:
                   <br>
-                  <p class="mainMessage">
+                  <p className="mainMessage">
                     " ${data.message} "
                   </p>
                 </p>
-                <p class="contact-details">You can reply to 
+                <p className="contact-details">You can reply to 
                   <strong>
                     ${data.name}
                   </strong>

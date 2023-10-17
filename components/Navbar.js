@@ -106,7 +106,7 @@ const Navbar = () => {
             <span
               className={
                 scrolled
-                  ? "text-fuchsia-900 dark:text-fuchsia-700 transition-all ease-in-out duration-300"
+                  ? "from-purple-600 via-pink-600 to-fuchsia-600 bg-gradient-to-r bg-clip-text text-transparent background-animate dark:text-transparent transition-all ease-in-out duration-300"
                   : ""
               }
             >

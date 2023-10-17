@@ -14,7 +14,7 @@ const Footer = () => {
           >
             <span className="text-2xl md:text-3xl font-zina uppercase">
               V
-              <span className={"text-fuchsia-900 dark:text-fuchsia-600"}>
+              <span className={"from-purple-600 via-pink-600 to-fuchsia-600 bg-gradient-to-r bg-clip-text text-transparent background-animate dark:text-transparent"}>
                 S
               </span>
             </span>

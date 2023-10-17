@@ -113,7 +113,11 @@ const Contact = () => {
     <section className="font-satoshi min-h-screen inset-0 bg-gradient-to-b from-fuchsia-200 via-rose-50 to-white dark:from-gray-900 dark:via-gray-950 dark:to-black">
       <div className="flex justify-center flex-col items-center text-center">
         <h1 className="text-xl md:text-2xl font-zina lg:text-3xl xl:text-4xl 2xl:text-5xl mt-40 dark:text-gray-200">
-          contact<span className="text-fuchsia-900">Me</span>.
+          contact
+          <span className="from-purple-600 via-pink-600 to-fuchsia-600 bg-gradient-to-r bg-clip-text text-transparent background-animate dark:text-transparent">
+            Me
+          </span>
+          .
         </h1>
         <br />
         <hr className="border-fuchsia-800 border-t-4 rounded w-8 dark:border-gray-200" />
@@ -122,7 +126,7 @@ const Contact = () => {
           Fill out the form below, or email me at{" "}
           <Link
             href={contactEmailHref}
-            class="text-fuchsia-900 dark:text-fuchsia-700 underline decoration-1"
+            className="from-purple-600 via-pink-600 to-fuchsia-600 bg-gradient-to-r text-transparent background-animate dark:text-transparent duration-300 border-b border-fuchsia-600 bg-clip-text"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -131,7 +135,7 @@ const Contact = () => {
           to get in touch
         </p>
       </div>
-      <div className="flex flex-wrap justify-around sm:px-20 pt-10 pb-20">
+      <div className="flex flex-wrap justify-around sm:px-20 pt-20 pb-20">
         {/* Contact Form Section */}
         <div className="w-full lg:w-1/2 px-4">
           <div className="container bg-neutral-50 rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-6 dark:bg-gray-900 dark:shadow-lg">

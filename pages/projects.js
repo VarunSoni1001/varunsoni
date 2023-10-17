@@ -18,7 +18,11 @@ const Projects = () => {
       <div className="font-satoshi relative">
         <div className="flex justify-center flex-col items-center text-center">
           <h1 className="text-xl md:text-2xl font-zina xl:text-4xl 2xl:text-5xl mt-40 dark:text-gray-200">
-            my<span className="text-fuchsia-900">Projects</span>.
+            my
+            <span className="from-purple-600 via-pink-600 to-fuchsia-600 bg-gradient-to-r bg-clip-text text-transparent background-animate dark:text-transparent">
+              Projects
+            </span>
+            .
           </h1>
           <br />
           <hr className="border-fuchsia-800 border-t-4 rounded w-8 dark:border-gray-200" />
@@ -27,7 +31,7 @@ const Projects = () => {
             Feel free to explore my projects below
           </p>
         </div>
-        <div className="flex flex-wrap justify-center dark:bg-transparent">
+        <div className="flex flex-wrap justify-center dark:bg-transparent pt-20">
           {projects?.map((project, index) => (
             <ProjectCard
               key={index}

@@ -70,7 +70,7 @@ const About = () => {
           animate={aboutControls}
           variants={sectionVariants}
         >
-          about<span className="text-fuchsia-900">Me</span>.
+          about<span className="from-purple-600 via-pink-600 to-fuchsia-600 bg-gradient-to-r bg-clip-text text-transparent background-animate dark:text-transparent">Me</span>.
         </motion.h1>
         <br />
         <motion.hr
