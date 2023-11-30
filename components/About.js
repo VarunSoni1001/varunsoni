@@ -70,7 +70,11 @@ const About = () => {
           animate={aboutControls}
           variants={sectionVariants}
         >
-          about<span className="from-purple-600 via-pink-600 to-fuchsia-600 bg-gradient-to-r bg-clip-text text-transparent background-animate dark:text-transparent">Me</span>.
+          about
+          <span className="from-purple-600 via-pink-600 to-fuchsia-600 bg-gradient-to-r bg-clip-text text-transparent background-animate dark:text-transparent">
+            Me
+          </span>
+          .
         </motion.h1>
         <br />
         <motion.hr
@@ -113,37 +117,37 @@ const About = () => {
               className="text-sm md:text-base font-satoshi lg:text-base xl:text-base px-2 md:px-8 2xl:text-xl text-gray-600 dark:text-gray-300"
               ref={aboutRef}
             >
-              I'm a <b>Computer Science</b> undergrad student. I'm passionate
-              about <b>Web Development</b> and <b>Android App Development</b>,
+              I'm a <b>Computer Science</b> student. I'm passionate
+              about <b>Web development</b> and <b>Android app development</b>,
               aiming to create seamless user experience and interfaces. Also,
               check out some of my work on the{" "}
               <Link
                 href={"/projects"}
-                className="underline text-fuchsia-800 font-bold italic dark:text-fuchsia-400"
+                className="underline text-fuchsia-800 font-medium italic dark:text-fuchsia-400"
               >
                 {" "}
-                Projects
+                projects
               </Link>{" "}
               page.
               <br />
               <br />
-              Feel free to connect or follow me on my{" "}
+              Feel free to <b>connect</b> or <b>follow</b> me on my{" "}
               <Link
-                className="underline text-fuchsia-800 font-bold italic dark:text-fuchsia-400"
+                className="underline text-fuchsia-800 font-medium italic dark:text-fuchsia-400"
                 href={linkedin}
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                LinkedIn
+                linkedin
               </Link>{" "}
-              where I share valuable insights on{" "}
-              <b>Web Development and Programming</b>.
+              where I share valuable insights on web development and
+              programming.
               <br />
               <br />
-              I'm <b>open</b> to job opportunities where I can apply,{" "}
-              <b>learn</b> and <b>expand</b> my skills & experience. If you have
-              a good opportunity that matches my skills, feel free to{" "}
-              <b>contact</b> me.
+              I'm <b>open</b> to internship/job opportunities where I can{" "}
+              <b>apply</b>, <b>learn</b>, and <b>expand</b> my skills,
+              experience and knowledge. If you have a good opportunity that
+              matches my skills, feel free to <b>contact</b> me.
             </motion.p>
             <br />
             <h2 className="text-base font-mono md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl mb-6 text-gray-900 dark:text-gray-300">

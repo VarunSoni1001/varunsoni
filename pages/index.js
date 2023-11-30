@@ -1,9 +1,9 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
 import { useEffect } from "react";
-import Experience from "@/components/Experience";
-import Education from "@/components/Education";
-import CertificationsSection from "@/components/CertificationsSection";
+// import Experience from "@/components/Experience";
+// import Education from "@/components/Education";
+// import CertificationsSection from "@/components/CertificationsSection";
 import PageTransition from "@/components/PageTransition";
 
 export default function Home() {
@@ -23,13 +23,13 @@ export default function Home() {
         <About />
 
         {/* EXPERIENCE COMPONENT */}
-        {/* <Experience /> */}
+        {/* <Experience />    UNCOMMENT THE RESPECTIVE COMPONENTS FIRST  */}
 
         {/* EDUCATION COMPONENT */}
-        {/* <Education /> */}
+        {/* <Education />    UNCOMMENT THE RESPECTIVE COMPONENTS FIRST  */}
 
         {/* cERTIFICATIONS COMPONENT */}
-        {/* <CertificationsSection /> */}
+        {/* <CertificationsSection />    UNCOMMENT THE RESPECTIVE COMPONENTS FIRST  */}
       </div>
     </>
   );

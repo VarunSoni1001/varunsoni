@@ -45,7 +45,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-fuchsia-200 via-rose-50 to-white dark:from-gray-900 dark:via-gray-950 dark:to-black" />
       <div className="container mx-auto text-center flex justify-center flex-col min-h-screen relative items-center z-10">
         <motion.h1
-          className="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl mb-4 dark:text-white"
+          className="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl mb-4 dark:text-neutral-200"
           initial="hidden"
           animate={nameControls}
           variants={nameVariants}
@@ -56,7 +56,7 @@ const Hero = () => {
           </span>
         </motion.h1>
         <motion.p
-          className="text-sm md:text-sm lg:text-lg xl:text-lg 2xl:text-xl dark:text-white"
+          className="text-sm md:text-sm lg:text-lg xl:text-lg 2xl:text-xl dark:text-neutral-200"
           initial="hidden"
           animate={descriptionControls}
           variants={descriptionVariants}
@@ -65,7 +65,7 @@ const Hero = () => {
           <b>
             <span className="nameText">Web</span>
           </b>{" "}
-          &{" "}
+          and{" "}
           <b>
             <span className="nameText">Software Developer</span>
           </b>

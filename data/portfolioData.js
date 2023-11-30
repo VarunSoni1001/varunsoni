@@ -4,23 +4,21 @@ import { LiaGraduationCapSolid } from "react-icons/lia";
 
 export const portfolioData = {
   name: "Varun Soni",
-  email: "varunsoni1001@gmail.com",
+  email: "varunsoni.dev@gmail.com",
   linkedin: "https://linkedin.com/in/varunsoni1001",
   experiences: [
     {
       title: "",
       company: "",
       date: "",
-      description:
-        "",
+      description: "",
       icon: <MdWorkOutline />,
     },
     {
       title: "",
       company: "",
       date: "",
-      description:
-        "",
+      description: "",
       icon: <MdWorkHistory />,
     },
   ],
@@ -57,8 +55,9 @@ export const portfolioData = {
     "Next.js",
     "Tailwind CSS",
     "JavaScript",
+    "API",
+    "Dark Mode",
     "Responsive Design",
-    "React",
     "Java",
     "Data Structures & Algorithms",
     "Framer Motion",

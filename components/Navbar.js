@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isProjectPage, setIsProjectPage] = useState(false);
   const [isContactPage, setIsContactPage] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isSmallScreen, setIsSmallScreen] = useState(false); // Track small screen size
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const [scrolled, setScrolled] = useState(false);
 
@@ -63,12 +63,11 @@ const Navbar = () => {
   }, [router.pathname]);
 
   useEffect(() => {
-    // Check for screen size and update isSmallScreen accordingly
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 768); // Adjust the breakpoint as needed
+      setIsSmallScreen(window.innerWidth <= 768);
     };
 
-    handleResize(); // Check on initial load
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -80,7 +79,6 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  // Animate presence properties
   const variants = {
     open: { opacity: 1, height: "auto" },
     closed: { opacity: 0, height: 0 },
@@ -92,7 +90,7 @@ const Navbar = () => {
         isMobileMenuOpen ? "min-h-screen" : ""
       } text-gray-600 transition duration-300 ease-in-out ${
         scrolled
-          ? "bg-neutral-100 shadow-lg border-b border-fuchsia-900 dark:bg-neutral-900 dark:shadow-none dark:border-white"
+          ? "bg-neutral-100 shadow-lg border-b border-fuchsia-900 dark:bg-black dark:shadow-none dark:border-white"
           : "bg-transparent"
       }`}
     >

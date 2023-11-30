@@ -5,7 +5,9 @@ const handler = async (req, res) => {
     const data = req.body;
 
     if (!data.name || !data.email || !data.message) {
-      return res.status(400).json({ message: "Bad Request" });
+      return res
+        .status(400)
+        .json({ message: "Bad Request, input fields are maybe empty." });
     }
 
     try {

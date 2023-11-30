@@ -29,8 +29,8 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <ThemeProvider enableSystem={true} attribute="class">
-        <Toaster />
+      <ThemeProvider enableSystem={false} attribute="class">
+        <Toaster reverseOrder={true} />
         <AnimatePresence mode="wait">
           <div key={router.pathname}>
             {!isSmallScreen && <MouseFollower />}

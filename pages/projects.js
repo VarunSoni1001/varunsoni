@@ -12,7 +12,6 @@ const Projects = () => {
 
   return (
     <>
-      {/* Portfolio Section */}
       <PageTransition />
       <div className="bg-gradient-to-b inset-0 from-fuchsia-200 via-rose-50 to-white absolute dark:from-black dark:via-black dark:to-black" />
       <div className="font-satoshi relative">

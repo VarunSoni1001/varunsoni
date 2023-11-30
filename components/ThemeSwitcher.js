@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { BsMoonStars, BsSun } from "react-icons/bs";
 
 const ThemeSwitcher = () => {
-  const { theme, setTheme, systemTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ const ThemeSwitcher = () => {
 
   const savedTheme = localStorage.getItem("theme");
 
-  const currentTheme = theme === "system" ? systemTheme : savedTheme;
+  const currentTheme = theme || savedTheme ? savedTheme : "light";
 
   const toggleTheme = () => {
     if (currentTheme === "dark") {
